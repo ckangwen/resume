@@ -1,0 +1,55 @@
+@import "./reset.css";
+
+
+:root {
+  --font-family: "LXGW WenKai Screen", sans-serif;
+  --bg-color: #ffffff;
+  --text-color: hsl(240 10% 3.9%);
+}
+
+html,
+body {
+  font-family: var(--font-family);
+}
+
+html {
+  font-size: 14px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  margin: 0px auto;
+  height: auto;
+  width: inherit;
+  word-break: normal;
+  word-wrap: break-word;
+  position: relative;
+  white-space: normal;
+  overflow-x: visible;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.my-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.line-dot {
+  position: relative;
+  padding-left: 10px;
+}
+.line-dot::before {
+  position: absolute;
+  content: " ";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+}
